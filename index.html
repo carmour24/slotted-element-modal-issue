@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Document</title>
-    <link href="./node_modules/dialog-polyfill/dist/dialog-polyfill.css" rel="stylesheet" />
+    <link href="./dialog-polyfill/dist/dialog-polyfill.css" rel="stylesheet" />
     <script src="./modal-outer.js" type="module"></script>
     <style>
      modal-outer {
@@ -24,7 +24,7 @@
         <textarea slot="slotted-element"></textarea>
     </modal-outer>
     <script type="module">
-        import dialogPolyfill from './node_modules/dialog-polyfill/dist/dialog-polyfill.esm.js';
+        import dialogPolyfill from './dialog-polyfill/dist/dialog-polyfill.esm.js';
         const dialog = document.querySelector('modal-outer').shadowRoot.querySelector('dialog')
         dialogPolyfill.registerDialog(dialog);
         dialog.showModal()
